@@ -1,0 +1,361 @@
+2025-02-22 15:15:40,334 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:15:40,334 - INFO - load_last_items(): Загружено 0 элементов из файла.
+2025-02-22 15:15:40,666 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 15:15:40,666 - INFO - save_last_items(): Сохранено 3 элементов в файл.
+2025-02-22 15:15:41,118 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:15:41,159 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:15:41,956 - ERROR - Ошибка в periodic_check: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 310, in periodic_check
+    send_item_message(chat_id, item)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 133, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 15:15:49,627 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 15:15:49,627 - INFO - callback_query(): Получено 3 элементов с сайта.
+2025-02-22 15:15:49,735 - INFO - callback_query(): Отправлен список текущих предметов (изменений нет).
+2025-02-22 15:16:06,653 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 15:16:06,653 - INFO - callback_query(): Получено 3 элементов с сайта.
+2025-02-22 15:16:06,791 - INFO - callback_query(): Отправлен список текущих предметов (изменений нет).
+2025-02-22 15:17:24,321 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 15:17:24,321 - INFO - callback_query(): Получено 3 элементов с сайта.
+2025-02-22 15:17:24,438 - INFO - callback_query(): Отправлен список текущих предметов (изменений нет).
+2025-02-22 15:44:05,474 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:44:05,479 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:44:05,599 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:44:05,599 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:44:08,956 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:44:09,771 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:44:12,441 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:50:29,955 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:50:29,955 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:50:30,016 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:50:30,016 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:50:33,643 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:50:34,690 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:50:37,015 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:52:00,053 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:52:00,053 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:52:04,708 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:52:10,068 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000212234F5400>, 'Connection to 85.239.55.140 timed out. (connect timeout=10)')))
+2025-02-22 15:52:10,068 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:52:15,604 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002122352A490>, 'Connection to 85.239.55.140 timed out. (connect timeout=10)')))
+2025-02-22 15:52:25,684 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002122352AD50>, 'Connection to 85.239.55.140 timed out. (connect timeout=10)')))
+2025-02-22 15:52:27,415 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002122352B250>, 'Connection to 85.239.55.140 timed out. (connect timeout=10)')))
+2025-02-22 15:52:35,885 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002122352B9D0>, 'Connection to 85.239.55.140 timed out. (connect timeout=10)')))
+2025-02-22 15:53:27,212 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:53:27,213 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:53:27,239 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:53:27,239 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:53:30,366 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:53:31,351 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:53:32,779 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:55:36,227 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:55:36,227 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:55:36,512 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:55:36,512 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:55:39,233 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:55:40,466 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:55:42,303 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 15:59:00,187 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 15:59:00,187 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 15:59:00,259 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 15:59:00,259 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 15:59:11,255 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 15:59:12,213 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 16:04:39,609 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 16:04:39,609 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 16:04:39,907 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 16:04:39,908 - INFO - save_last_items(): Сохранено 3 элементов в файл.
+2025-02-22 16:04:40,919 - ERROR - Ошибка при отправке сообщения: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 151, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 16:04:41,185 - ERROR - Ошибка при отправке сообщения: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 151, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 16:04:41,550 - ERROR - Ошибка при отправке сообщения: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 151, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 16:04:43,545 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 16:04:46,290 - INFO - fetch_items(): Получено 3 элементов с сайта.
+2025-02-22 16:04:46,291 - INFO - callback_query(): Получено 3 элементов с сайта.
+2025-02-22 16:04:46,468 - INFO - callback_query(): Отправлен список текущих предметов (изменений нет).
+2025-02-22 17:16:10,666 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:16:10,666 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:16:10,843 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 17:16:10,843 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:16:11,379 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:16:14,584 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 17:16:47,858 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:16:47,858 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:16:51,796 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:16:51,796 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:16:52,258 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 17:16:52,258 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:16:58,767 - ERROR - Ошибка при запросе сайта: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-22 17:17:37,495 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:17:37,495 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:17:42,903 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:17:47,502 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020333EA1400>, 'Connection to 79.174.12.190 timed out. (connect timeout=10)')))
+2025-02-22 17:17:47,502 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:17:53,674 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020333EE6490>, 'Connection to 79.174.12.190 timed out. (connect timeout=10)')))
+2025-02-22 17:19:27,651 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:19:27,651 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:19:42,787 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:19:44,444 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-02-22 17:19:46,348 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-02-22 17:19:46,348 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:19:49,642 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-02-22 17:19:50,802 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-02-22 17:19:51,678 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-02-22 17:20:39,725 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:20:39,726 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:20:42,848 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:21:00,784 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001B7421F5400>, 'Connection to 50.223.246.237 timed out. (connect timeout=50)')))
+2025-02-22 17:21:00,784 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:21:04,625 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001B74222A490>, 'Connection to 50.223.246.237 timed out. (connect timeout=50)')))
+2025-02-22 17:21:13,708 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001B74222AAD0>, 'Connection to 50.223.246.237 timed out. (connect timeout=50)')))
+2025-02-22 17:21:26,047 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001B74222B390>, 'Connection to 50.223.246.237 timed out. (connect timeout=50)')))
+2025-02-22 17:21:38,534 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:21:38,535 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:21:43,340 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:21:59,570 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F5AD8DD400>, 'Connection to 50.174.7.159 timed out. (connect timeout=50)')))
+2025-02-22 17:21:59,570 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:22:05,238 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F5AD942490>, 'Connection to 50.174.7.159 timed out. (connect timeout=50)')))
+2025-02-22 17:22:05,398 - ERROR - Ошибка в обработчике callback_query: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 266, in callback_query
+    bot.answer_callback_query(call.id, "Обновляю список товаров...")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 6058, in answer_callback_query
+    return apihelper.answer_callback_query(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, callback_query_id, text=text, show_alert=show_alert, url=url, cache_time=cache_time)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 1854, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: query is too old and response timeout expired or query ID is invalid
+2025-02-22 17:22:08,045 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F5AD942AD0>, 'Connection to 50.174.7.159 timed out. (connect timeout=50)')))
+2025-02-22 17:22:40,452 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:22:40,452 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:22:45,822 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:23:01,506 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F1CB405400>, 'Connection to 41.207.187.178 timed out. (connect timeout=50)')))
+2025-02-22 17:23:01,506 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:23:03,412 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F1CB439E50>, 'Connection to 41.207.187.178 timed out. (connect timeout=50)')))
+2025-02-22 17:23:08,122 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F1CB439450>, 'Connection to 41.207.187.178 timed out. (connect timeout=50)')))
+2025-02-22 17:33:22,578 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F1CB4396D0>, 'Connection to 41.207.187.178 timed out. (connect timeout=50)')))
+2025-02-22 17:33:22,578 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:35:03,792 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:35:03,793 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:35:13,166 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:35:24,851 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E8CDE65400>, 'Connection to 62.204.35.17 timed out. (connect timeout=50)')))
+2025-02-22 17:35:24,851 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:35:31,485 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E8CDE99E50>, 'Connection to 62.204.35.17 timed out. (connect timeout=50)')))
+2025-02-22 17:35:34,978 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E8CDE99450>, 'Connection to 62.204.35.17 timed out. (connect timeout=50)')))
+2025-02-22 17:35:52,673 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E8CDE9AFD0>, 'Connection to 62.204.35.17 timed out. (connect timeout=50)')))
+2025-02-22 17:39:25,627 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:39:25,627 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:39:25,628 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:39:25,628 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:39:31,095 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:39:32,809 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:39:42,633 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:39:42,634 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:39:42,635 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:39:42,635 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:39:45,037 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:40:43,946 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:40:43,946 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:40:43,947 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:40:43,947 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:40:53,869 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:40:54,618 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:41:45,342 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:41:45,342 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:41:45,343 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:41:45,343 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:41:51,122 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:41:52,916 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:41:53,643 - ERROR - Ошибка при запросе сайта: Failed to parse: socks5://user:pass@host:port
+2025-02-22 17:44:48,295 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 17:44:48,295 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 17:45:09,336 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000197D6D4D590>, 'Connection to 91.242.228.104 timed out. (connect timeout=50)')))
+2025-02-22 17:45:09,336 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 17:45:41,444 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 17:46:03,294 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000197D6C2F750>, 'Connection to 91.242.228.104 timed out. (connect timeout=50)')))
+2025-02-22 17:46:05,279 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000197D6D4E850>, 'Connection to 91.242.228.104 timed out. (connect timeout=50)')))
+2025-02-22 18:03:02,769 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 18:03:02,769 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 18:03:02,770 - ERROR - Ошибка при запросе сайта: Proxy URL had unsupported scheme wss, should use http:// or https://
+2025-02-22 18:03:02,770 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 18:03:11,000 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 18:03:12,112 - ERROR - Ошибка при запросе сайта: Proxy URL had unsupported scheme wss, should use http:// or https://
+2025-02-22 18:25:48,948 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 18:25:48,948 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 18:25:49,236 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 18:25:49,236 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 18:25:49,620 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 18:25:56,447 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 18:27:16,416 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 18:27:16,416 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 18:27:16,713 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 18:27:16,713 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 18:27:23,702 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 18:27:24,885 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 18:37:16,994 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-02-22 18:37:16,994 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 18:46:33,049 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 18:46:33,049 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 18:46:33,050 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F55D4374D0>: Failed to resolve 'proxy.server' ([Errno 11001] getaddrinfo failed)")))
+2025-02-22 18:46:33,050 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 18:46:58,873 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 18:47:00,040 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F55D4A56D0>: Failed to resolve 'proxy.server' ([Errno 11001] getaddrinfo failed)")))
+2025-02-22 18:56:34,038 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F55D4A5BD0>: Failed to resolve 'proxy.server' ([Errno 11001] getaddrinfo failed)")))
+2025-02-22 18:56:34,038 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 19:06:35,040 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F55D4A5E50>: Failed to resolve 'proxy.server' ([Errno 11001] getaddrinfo failed)")))
+2025-02-22 19:06:35,041 - WARNING - Не удалось получить данные о товарах при автоматической проверке.
+2025-02-22 19:15:20,085 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 19:15:21,023 - ERROR - Ошибка при запросе сайта: HTTPSConnectionPool(host='fruityblox.com', port=443): Max retries exceeded with url: /stock (Caused by ProxyError('Unable to connect to proxy', NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F55D4A6850>: Failed to resolve 'proxy.server' ([Errno 11001] getaddrinfo failed)")))
+2025-02-22 19:18:05,790 - INFO - Таблица chat_ids успешно создана (или уже существовала).
+2025-02-22 19:18:05,790 - INFO - load_last_items(): Загружено 3 элементов из файла.
+2025-02-22 19:18:06,154 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:18:06,155 - INFO - save_last_items(): Сохранено 2 элементов в файл.
+2025-02-22 19:18:06,750 - ERROR - Ошибка при отправке сообщения: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 162, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 19:18:06,857 - ERROR - Ошибка при отправке сообщения: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+Traceback (most recent call last):
+  File "C:\Users\Сергей\OneDrive\Рабочий стол\бот с нуля\bot1.py", line 162, in send_item_message
+    bot.send_message(chat_id, message_text, parse_mode="HTML")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reply_parameters=reply_parameters, link_preview_options=link_preview_options, business_connection_id=business_connection_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        message_effect_id=message_effect_id, allow_paid_broadcast=allow_paid_broadcast))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\Сергей\AppData\Local\Programs\Python\Python313\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-02-22 19:18:11,898 - INFO - Добавлен новый chat_id: 1311532368
+2025-02-22 19:18:13,127 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:18:13,127 - INFO - callback_query(): Получено 2 элементов с сайта.
+2025-02-22 19:18:13,230 - INFO - callback_query(): Отправлен список текущих предметов (изменений нет).
+2025-02-22 19:23:07,212 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:28:07,627 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:33:08,003 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:38:08,393 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:43:08,743 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:48:09,134 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:53:09,475 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 19:58:09,786 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 20:03:10,269 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 20:08:10,634 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 20:13:10,974 - INFO - fetch_items(): Получено 2 элементов с сайта.
+2025-02-22 20:18:11,287 - INFO - fetch_items(): Получено 2 элементов с сайта.
